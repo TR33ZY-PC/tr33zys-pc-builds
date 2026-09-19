@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TR33ZY'S PC BUILDS — custom gaming PCs built in Hagerstown, Maryland.">
+  <title>TR33ZY'S PC BUILDS | Custom PCs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#home"><span>TR33ZY'S</span> PC BUILDS</a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#builds">Builds</a>
+      <a href="#process">How It Works</a>
+      <a href="#quote">Get a Quote</a>
+    </nav>
+    <a class="nav-cta" href="#quote">Start a Build</a>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="glow glow-one"></div><div class="glow glow-two"></div>
+      <div class="hero-copy">
+        <div class="eyebrow">HAGERSTOWN, MARYLAND • CUSTOM PC BUILDER</div>
+        <h1>BUILT FOR<br><span>YOUR GAME.</span></h1>
+        <p>Custom gaming PCs designed around your budget, performance goals, and style — built locally in Hagerstown, MD.</p>
+        <div class="hero-buttons">
+          <a class="button primary" href="#quote">Build My PC <span>↗</span></a>
+          <a class="button ghost" href="#builds">Explore Builds</a>
+        </div>
+        <div class="trust-row">
+          <div><strong>01</strong><span>Custom Parts</span></div>
+          <div><strong>02</strong><span>Professional Build</span></div>
+          <div><strong>03</strong><span>Tested & Ready</span></div>
+        </div>
+      </div>
+      <div class="pc-art" aria-label="Stylized custom gaming PC">
+        <div class="pc-case">
+          <div class="glass">
+            <div class="fan f1"></div><div class="fan f2"></div><div class="fan f3"></div>
+            <div class="gpu">TR33ZY</div>
+            <div class="board"></div>
+          </div>
+          <div class="case-bottom"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-heading">
+        <div><span class="eyebrow">WHAT WE DO</span><h2>PCs WITHOUT<br>THE GUESSWORK.</h2></div>
+        <p>From your first parts list to your first game, every build is tailored to what you actually need.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="icon">⌘</div><h3>Custom Gaming PCs</h3><p>Balanced builds for 1080p, 1440p, and 4K gaming at your target budget.</p></article>
+        <article class="card"><div class="icon">◈</div><h3>High-End Builds</h3><p>Enthusiast hardware for high refresh-rate gaming, streaming, and demanding workloads.</p></article>
+        <article class="card"><div class="icon">↯</div><h3>Upgrades & Optimization</h3><p>GPU, CPU, RAM, SSD, cooling and performance upgrades without wasting money.</p></article>
+        <article class="card"><div class="icon">⚙</div><h3>Setup & Testing</h3><p>Clean cable management, BIOS setup, drivers, stress testing and a ready-to-use system.</p></article>
+      </div>
+    </section>
+
+    <section id="builds" class="section dark-section">
+      <div class="section-heading">
+        <div><span class="eyebrow">BUILD MENU</span><h2>CHOOSE YOUR<br>LEVEL.</h2></div>
+        <p>These are starting concepts. Your final build is customized to your games, budget and preferences.</p>
+      </div>
+      <div class="build-grid">
+        <article class="build-card">
+          <div class="build-visual budget"><span>01</span><b>1080P</b></div>
+          <div class="build-info"><h3>Starter Gaming</h3><p>High-value performance for competitive and everyday gaming.</p><a href="#quote">Request this build →</a></div>
+        </article>
+        <article class="build-card featured">
+          <div class="badge">POPULAR</div>
+          <div class="build-visual mid"><span>02</span><b>1440P</b></div>
+          <div class="build-info"><h3>Performance</h3><p>A sweet spot for high FPS, high refresh-rate 1440p gaming.</p><a href="#quote">Request this build →</a></div>
+        </article>
+        <article class="build-card">
+          <div class="build-visual elite"><span>03</span><b>4K</b></div>
+          <div class="build-info"><h3>Enthusiast</h3><p>Maximum performance for demanding games and creative workloads.</p><a href="#quote">Request this build →</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="section-heading">
+        <div><span class="eyebrow">THE PROCESS</span><h2>FROM IDEA<br>TO PC.</h2></div>
+      </div>
+      <div class="steps">
+        <div class="step"><span>01</span><h3>Tell us what you want</h3><p>Give us your budget, games, resolution and preferences.</p></div>
+        <div class="step"><span>02</span><h3>Get your parts list</h3><p>We put together a balanced parts list and explain the choices.</p></div>
+        <div class="step"><span>03</span><h3>Approve the build</h3><p>Nothing gets built until you're happy with the configuration.</p></div>
+        <div class="step"><span>04</span><h3>Build & test</h3><p>Your PC is assembled, configured and tested before pickup/delivery.</p></div>
+      </div>
+    </section>
+
+    <section id="quote" class="quote-section">
+      <div class="quote-copy">
+        <span class="eyebrow">START YOUR BUILD</span>
+        <h2>LET'S BUILD<br><span>SOMETHING.</span></h2>
+        <p>Tell TR33ZY'S PC BUILDS what you're looking for. We'll use your details to put together a build direction that fits.</p>
+        <div class="location">📍 Hagerstown, MD & surrounding areas</div>
+      </div>
+      <form class="quote-form" onsubmit="sendQuote(event)">
+        <div class="form-row">
+          <label>Name<input id="name" required placeholder="Your name"></label>
+          <label>Budget<input id="budget" required placeholder="$1,000"></label>
+        </div>
+        <label>Email<input id="email" type="email" required placeholder="you@email.com"></label>
+        <label>What do you play / use the PC for?<textarea id="use" required placeholder="Fortnite, Call of Duty, streaming, editing..."></textarea></label>
+        <label>Anything else?<textarea id="notes" placeholder="RGB, white/black build, Wi-Fi, specific parts, etc."></textarea></label>
+        <button class="button primary full" type="submit">Request My Build <span>↗</span></button>
+        <small id="form-status">This form opens your email app with your request ready to send.</small>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div><a class="brand" href="#home"><span>TR33ZY'S</span> PC BUILDS</a><p>Custom PCs • Hagerstown, MD</p></div>
+    <div class="footer-links"><a href="#services">Services</a><a href="#builds">Builds</a><a href="#quote">Contact</a></div>
+    <div>© <span id="year"></span> TR33ZY'S PC BUILDS</div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    function sendQuote(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const budget = document.getElementById("budget").value;
+      const email = document.getElementById("email").value;
+      const use = document.getElementById("use").value;
+      const notes = document.getElementById("notes").value;
+      const subject = encodeURIComponent("PC Build Request — " + name);
+      const body = encodeURIComponent(
+        "Name: " + name + "\nBudget: " + budget + "\nEmail: " + email +
+        "\n\nWhat I use the PC for:\n" + use + "\n\nAdditional details:\n" + notes
+      );
+      // Replace the placeholder email below with the business email before launch.
+      window.location.href = "mailto:Tetonimore@gmail.com?subject=" + subject + "&body=" + body;
+      document.getElementById("form-status").textContent = "Your email app should open with the request filled out.";
+    }
+  </script>
+</body>
+</html>
