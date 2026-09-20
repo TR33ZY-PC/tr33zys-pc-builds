@@ -68,16 +68,16 @@
       </div>
       <div class="build-grid">
         <article class="build-card">
-          <div class="build-visual budget"><span>01</span><b>1080P</b></div>
+          <div class="build-visual budget"><img class="build-photo" src="https://images.pexels.com/photos/33644890/pexels-photo-33644890.jpeg?cs=srgb&dl=pexels-zeleboba-33644890.jpg&fm=jpg" alt="Custom gaming PC build interior"><span>01</span><b>1080P</b></div>
           <div class="build-info"><h3>Starter Gaming</h3><p>High-value performance for competitive and everyday gaming.</p><a href="#quote">Request this build →</a></div>
         </article>
         <article class="build-card featured">
           <div class="badge">POPULAR</div>
-          <div class="build-visual mid"><span>02</span><b>1440P</b></div>
+          <div class="build-visual mid"><img class="build-photo" src="https://images.pexels.com/photos/33104416/pexels-photo-33104416.jpeg?cs=srgb&dl=pexels-zeleboba-33104416.jpg&fm=jpg" alt="High-end custom gaming PC build"><span>02</span><b>1440P</b></div>
           <div class="build-info"><h3>Performance</h3><p>A sweet spot for high FPS, high refresh-rate 1440p gaming.</p><a href="#quote">Request this build →</a></div>
         </article>
         <article class="build-card">
-          <div class="build-visual elite"><span>03</span><b>4K</b></div>
+          <div class="build-visual elite"><img class="build-photo" src="https://images.pexels.com/photos/33693785/pexels-photo-33693785.jpeg?cs=srgb&dl=pexels-zeleboba-33693785.jpg&fm=jpg" alt="High-performance RGB gaming PC build"><span>03</span><b>4K</b></div>
           <div class="build-info"><h3>Enthusiast</h3><p>Maximum performance for demanding games and creative workloads.</p><a href="#quote">Request this build →</a></div>
         </article>
       </div>
@@ -108,7 +108,7 @@
           <label>Budget<input id="budget" required placeholder="$1,000"></label>
         </div>
         <label>Email<input id="email" type="email" required placeholder="you@email.com"></label>
-        <label>What do you play / use the PC for?<textarea id="use" required placeholder="Fortnite, Call of Duty, streaming, editing..."></textarea></label>
+        <label>List your parts here<textarea id="use" required placeholder="CPU, GPU, RAM, storage, case, etc."></textarea></label>
         <label>Anything else?<textarea id="notes" placeholder="RGB, white/black build, Wi-Fi, specific parts, etc."></textarea></label>
         <button class="button primary full" type="submit">Request My Build <span>↗</span></button>
         <small id="form-status">This form opens your email app with your request ready to send.</small>
@@ -135,7 +135,7 @@
       const subject = encodeURIComponent("PC Build Request — " + name);
       const body = encodeURIComponent(
         "Name: " + name + "\nBudget: " + budget + "\nEmail: " + email +
-        "\n\nWhat I use the PC for:\n" + use + "\n\nAdditional details:\n" + notes
+        "\n\nRequested parts / configuration:\n" + use + "\n\nAdditional details:\n" + notes
       );
       // Replace the placeholder email below with the business email before launch.
       window.location.href = "mailto:Tetonimore@gmail.com?subject=" + subject + "&body=" + body;
